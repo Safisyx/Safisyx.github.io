@@ -1,5 +1,30 @@
 .App {
   text-align: center;
+  margin-left: 0.2%;
+  margin-right: 0.2%;
+  box-shadow: 1px 0 1px lightgrey, -1px 0 1px lightgrey;
+}
+.myItem {
+  width: 12%;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  position: relative;
+}
+
+.App .active{
+  /* background-color: black !important; */
+}
+.myItem span{
+  display: inline-block;
+  margin: 0 auto;
+  font-size: 1.5em;
+}
+
+.myName {
+  display: inline-block;
+  position: absolute;
+  transform: translate(-50%,0);
+  left: 50%;
 }
 
 .App-logo {

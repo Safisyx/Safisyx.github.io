@@ -1,18 +1,54 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import {Menu, Image, Dropdown, Button} from 'semantic-ui-react'
 import './App.css';
+import 'semantic-ui-css/semantic.min.css';
 
 class App extends Component {
+  state = {
+    activeItem: 'portfolio',
+    vWidth: window.innerWidth
+  }
+
+  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+  componentDidMount =() => {
+    window.addEventListener("resize", ()=>{
+      this.setState({vWidth:window.innerWidth})
+    });
+  }
+
+  componentWillUnmount = () =>{
+    window.removeEventListener("resize", this.updateDimensions);
+  }
   render() {
+    const { activeItem } = this.state
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Menu stackable>
+          <Menu.Item style={{backgroundColor:'lightgrey'}}>
+            <Image src='/favicon.png' size='mini'/>
+            {
+               this.state.vWidth<768 &&
+              <span className='myName'>Haingotiana Safidy Nandrianina Ratsimbazafy</span>
+            }
+          </Menu.Item>
+          <Menu.Item
+            className = 'myItem'
+            name='about'
+            active={activeItem === 'about'}
+            onClick={this.handleItemClick}
+          >
+            <span>About</span>
+          </Menu.Item>
+
+          <Menu.Item
+            className='myItem'
+            name='portfolio'
+            active={activeItem === 'portfolio'}
+            onClick={this.handleItemClick}
+          >
+            <span>Portfolio</span>
+          </Menu.Item>
+        </Menu>
       </div>
     );
   }
