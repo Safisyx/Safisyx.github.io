@@ -20,10 +20,10 @@ class App extends Component {
     window.removeEventListener("resize", this.updateDimensions);
   }
   render() {
-    const { activeItem } = this.state
+    const { activeItem, vWidth } = this.state
     return (
       <div className="App">
-        <Menu stackable>
+        <Menu stackable fixed={vWidth<768?null:'top'}>
           <Menu.Item style={{backgroundColor:'lightgrey'}}>
             <Image src='/favicon.png' size='mini'/>
             {
@@ -47,6 +47,13 @@ class App extends Component {
             onClick={this.handleItemClick}
           >
             <span>Portfolio</span>
+          </Menu.Item>
+        </Menu >
+        <div style={{height:'1000px', backgroundColor:'rgba(0,0,0,0.05)'}}/>
+        <Menu stackable fixed='bottom' borderless style={{backgroundColor:'lightgrey'}}>
+          <Menu.Item
+            className = {vWidth>=768?null:'footerItem'}>
+            <i className='large copyright icon'/><span>Haingotiana Safidy Nandrianina Ratsimbazafy</span>
           </Menu.Item>
         </Menu>
       </div>
