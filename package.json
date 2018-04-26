@@ -7,7 +7,8 @@
     "gh-pages": "^1.1.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "semantic-ui-react": "^0.79.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -17,5 +18,10 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -b master -d build"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest-enzyme": "^6.0.0",
+    "react-test-renderer": "^16.3.2"
+  }
 }
