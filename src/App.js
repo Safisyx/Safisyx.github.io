@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import {Menu, Image, Dropdown, Button} from 'semantic-ui-react'
+import {Menu, Image, Dropdown, Button, Flag} from 'semantic-ui-react'
 import './App.css';
 import 'semantic-ui-css/semantic.min.css';
+
+import Portfolio from './containers/Portfolio'
 
 class App extends Component {
   state = {
@@ -49,11 +51,16 @@ class App extends Component {
             <span>Portfolio</span>
           </Menu.Item>
         </Menu >
-        <div style={{height:'1000px', backgroundColor:'rgba(0,0,0,0.05)'}}/>
+
+        {activeItem==='portfolio' &&
+          <Portfolio vWidth={vWidth}/>
+        }
+
         <Menu stackable fixed='bottom' borderless style={{backgroundColor:'lightgrey'}}>
           <Menu.Item
             className = {vWidth>=768?null:'footerItem'}>
-            <i className='large copyright icon'/><span>Haingotiana Safidy Nandrianina Ratsimbazafy</span>
+            <i className='large copyright icon'/><span className='s1' style={{marginRight:'5px'}}>2018</span>
+            <span className='s2'>Haingotiana Safidy Nandrianina Ratsimbazafy</span>
           </Menu.Item>
         </Menu>
       </div>
