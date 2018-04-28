@@ -18,7 +18,7 @@ class Desktop extends PureComponent{
               <Image src= '/tank.gif'/>
               <Card.Content>
                 <Card.Header>
-                  Tank (C++)
+                  Tank
                 </Card.Header>
                 <Card.Description>
                   A simple tank game written in C++ and using <a className='b' target="_blank" rel="noopener noreferrer" href='https://www.sfml-dev.org'>SFML</a>
@@ -36,7 +36,7 @@ class Desktop extends PureComponent{
               <Image src= '/balls.gif' style={{height:'290px'}}/>
               <Card.Content>
                 <Card.Header>
-                  Balls (C++)
+                  Balls
                 </Card.Header>
                 <Card.Description>
                   Little balls that can draw letters, written in C++ and using <a className='b' target="_blank" rel="noopener noreferrer" href='https://www.sfml-dev.org'>SFML</a>
