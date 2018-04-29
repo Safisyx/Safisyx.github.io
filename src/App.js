@@ -70,7 +70,7 @@ class App extends Component {
              onClick={()=>window.scrollTo(0, 0)}/>
             }
           </Menu.Item>
-        </Menu>
+        </Menu>*
       </div>
     );
   }
