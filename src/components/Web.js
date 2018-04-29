@@ -14,7 +14,7 @@ class Web extends PureComponent{
     return (
         <Grid columns={nColumns} className='Web' style={{backgroundColor:'rgba(34,36,38,0)', marginTop:'36px'}}>
           <Grid.Column>
-            <Card centered raised color='violet'>
+            <Card centered raised color='violet' style={{textAlign:'left'}}>
               <Image src= '/hangman.png'/>
               <Card.Content>
                 <Card.Header>
@@ -35,7 +35,7 @@ class Web extends PureComponent{
           </Grid.Column>
 
           <Grid.Column>
-            <Card centered raised color='violet'>
+            <Card centered raised color='violet' style={{textAlign:'left'}}>
               <Image src= '/evaluation.png'/>
               <Card.Content>
                 <Card.Header>
