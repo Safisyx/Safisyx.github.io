@@ -12,11 +12,11 @@ class Desktop extends PureComponent{
       nColumns=1
     }
     return (
-        <Grid centered columns={nColumns} className='Web' style={{backgroundColor:'rgba(34,36,38,.1)'}}>
+        <Grid centered columns={nColumns} className='Web' style={{backgroundColor:'rgba(34,36,38,.1)',marginTop:'36px'}}>
           <Grid.Column>
-            <Card centered raised color='black'>
+            <Card centered raised color='violet'>
               <Image src= '/tank.gif'/>
-              <Card.Content>
+              <Card.Content style={{marginTop:'5px'}}>
                 <Card.Header>
                   Tank
                 </Card.Header>
@@ -32,9 +32,9 @@ class Desktop extends PureComponent{
           </Grid.Column>
 
           <Grid.Column>
-            <Card centered raised color='black'>
+            <Card centered raised color='violet'>
               <Image src= '/balls.gif' style={{height:'290px'}}/>
-              <Card.Content>
+              <Card.Content style={{margin:'5px'}}>
                 <Card.Header>
                   Balls
                 </Card.Header>

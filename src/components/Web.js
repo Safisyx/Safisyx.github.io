@@ -12,9 +12,9 @@ class Web extends PureComponent{
       nColumns=1
     }
     return (
-        <Grid columns={nColumns} className='Web' style={{backgroundColor:'rgba(34,36,38,.1)'}}>
+        <Grid columns={nColumns} className='Web' style={{backgroundColor:'rgba(34,36,38,0)', marginTop:'36px'}}>
           <Grid.Column>
-            <Card centered raised color='black'>
+            <Card centered raised color='violet'>
               <Image src= '/hangman.png'/>
               <Card.Content>
                 <Card.Header>
@@ -29,13 +29,13 @@ class Web extends PureComponent{
                 </Card.Description>
               </Card.Content>
               <Card.Content textAlign='center'>
-                <p>See code on <a className='a' target="_blank" rel="noopener noreferrer" href='https://github.com/Safisyx/Hangman'>Github</a></p>
+                <p><a className='a' target="_blank" rel="noopener noreferrer" href='https://github.com/Safisyx/Hangman'>View code</a></p>
               </Card.Content>
             </Card>
           </Grid.Column>
 
           <Grid.Column>
-            <Card centered raised color='black'>
+            <Card centered raised color='violet'>
               <Image src= '/evaluation.png'/>
               <Card.Content>
                 <Card.Header>
@@ -47,8 +47,8 @@ class Web extends PureComponent{
                 </Card.Description>
               </Card.Content>
               <Card.Content textAlign='center'>
-                <p>See frontend code on <a className='a' target="_blank" rel="noopener noreferrer" href='https://github.com/Safisyx/evaluation-client'>Github</a>
-                <br/>See backend code on <a className='a' target="_blank" rel="noopener noreferrer" href='https://github.com/Safisyx/student-evaluation-api'>Github</a></p>
+                <p><a className='a' target="_blank" rel="noopener noreferrer" href='https://github.com/Safisyx/evaluation-client'>View frontend code</a>
+                <br/><a className='a' target="_blank" rel="noopener noreferrer" href='https://github.com/Safisyx/student-evaluation-api'>View backend code</a></p>
               </Card.Content>
             </Card>
           </Grid.Column>

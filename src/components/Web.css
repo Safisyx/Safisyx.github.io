@@ -1,9 +1,9 @@
 .Web a.a{
-  color:blue !important;
+  color:#7401DF !important;
 }
 
 .Web a.a:hover{
-  color: black !important;
+  color: rgb(46,10,36) !important;
 }
 
 .Web a.b{

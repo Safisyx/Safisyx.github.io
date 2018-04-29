@@ -1,6 +1,18 @@
 h2 {
   text-align: center;
   text-decoration: underline;
+  color:grey;
   text-decoration-style: dotted;
-  margin-bottom: 25px;
+  font-family: 'East Sea Dokdo', cursive, sans-serif;
+  text-transform: uppercase;
+  background-color: rgba(0,0,0,0.5);
+  padding:10px;
+  padding-bottom: 12px;
+  padding-top: 2px;
+  font-size: 30px;
+  position: absolute;
+  left:0px; top:0;
+  width: 100%;
+  border-top-left-radius: 2px;
+  border-top-right-radius:2px;
 }
