@@ -1,5 +1,9 @@
-body {
+#body {
   margin: 0;
   padding: 0;
+  height: 100vh;
   font-family: sans-serif;
+  background-size: 100%;
+  background: linear-gradient(to bottom right,#CEA5E1, rgb(48,10,36), #2b1335) no-repeat;
+  background-attachment: fixed;
 }
