@@ -9,7 +9,7 @@ class Portfolio extends PureComponent{
     return (
       <div className='Portfolio' style={{width:'95%', margin:'0 auto',
       marginBottom:vWidth<=520?'70px':'50px',marginTop:(vWidth<768)?'0':'70px'}}>
-        <Grid centered doubling columns={2}>
+        <Grid centered doubling columns={2} style={{width:'100%', margin:'0 auto'}}>
           <Grid.Column>
             <Segment style={{backgroundColor:'rgba(219,112,147,.2)', textAlign:'center'}}>
               <h2>Web:</h2>
