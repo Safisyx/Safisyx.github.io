@@ -4,11 +4,21 @@ import Web from '../components/Web'
 import Desktop from '../components/Desktop'
 import './Portfolio.css'
 class Portfolio extends PureComponent{
+  marginbottom = ()=> {
+    const {vWidth}=this.props
+    if (vWidth<362){
+      return '89px'
+    }
+    if (vWidth>=362 && vWidth<526){
+      return '68px'
+    }
+    return '47px'
+  }
   render() {
     const {vWidth}=this.props
     return (
       <div className='Portfolio' style={{width:'95%', margin:'0 auto',
-      marginBottom:vWidth<=520?'70px':'50px',marginTop:(vWidth<768)?'0':'70px'}}>
+      marginBottom:`${this.marginbottom()}`,marginTop:(vWidth<768)?'0':'70px'}}>
         <Grid centered doubling columns={2} style={{width:'100%', margin:'0 auto'}}>
           <Grid.Column>
             <Segment style={{backgroundColor:'rgba(219,112,147,.2)', textAlign:'center'}}>
