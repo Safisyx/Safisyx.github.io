@@ -59,14 +59,14 @@ class App extends Component {
         }
 
         <Menu stackable fixed='bottom' borderless style={{backgroundColor:'lightgrey'}}>
-          <Menu.Item
+          <Menu.Item style={{width:'100%', position:'relative'}}
             className = {vWidth>=768?null:'footerItem'}>
             <i className='large copyright icon'/><span className='s1' style={{marginRight:'5px'}}>2018</span>
             <span className='s2'>Haingotiana Safidy Nandrianina Ratsimbazafy</span>
             {
               vWidth<=768 &&
             <Icon link name='arrow circle up' size='large'
-             style={{position:'fixed', color:'purple', right:'0'}}
+             style={{float:'right', color:'purple', marginRight:'0'}}
              onClick={()=>window.scrollTo(0, 0)}/>
             }
           </Menu.Item>
