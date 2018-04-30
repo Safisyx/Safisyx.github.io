@@ -58,7 +58,7 @@ class App extends Component {
           <Portfolio vWidth={vWidth}/>
         }
 
-        <Menu stackable fixed='bottom' borderless style={{backgroundColor:'lightgrey', width:'100vw', margin:'0'}}>
+        <Menu stackable fixed='bottom' borderless style={{backgroundColor:'lightgrey'}}>
           <Menu.Item style={{width:'100%', position:'relative'}}
             className = {vWidth>=768?null:'footerItem'}>
             <i className='large copyright icon'/><span className='s1' style={{marginRight:'5px'}}>2018</span>
