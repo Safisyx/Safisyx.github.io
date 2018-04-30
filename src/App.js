@@ -24,7 +24,6 @@ class App extends Component {
 
   paddingbottom = ()=> {
     const {vWidth}=this.state
-    console.log(vWidth);
     if (vWidth<362){
       return '89px'
     }
