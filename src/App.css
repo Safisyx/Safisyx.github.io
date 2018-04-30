@@ -5,6 +5,7 @@
   background-size:100% auto; */
   background: linear-gradient(to bottom right,#CEA5E1, rgb(48,10,36), #2b1335) no-repeat;
   background-attachment: fixed;
+  padding-bottom: 20px;
 }
 .App {
   text-align: center;
