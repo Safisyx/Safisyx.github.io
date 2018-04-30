@@ -1,10 +1,15 @@
-#body {
+#body{
   margin: 0;
   padding: 0;
-  height: 100vh;
+  min-height: 100vh;
   font-family: sans-serif;
-  background:
+  /* background:
     linear-gradient(to right, rgba(48,10,36,.9) 0%,rgba(43,19,53,.9) 17%,#7E5284 50%, rgba(48,10,36,.9) 83%);
-  background-size: 100%
+  background-size: 100% */
+  background-color: rgba(43,19,53,.9);
   /* rgba(206,165,225) */
+}
+
+#root{
+  background-color: rgba(43,19,53,.1);
 }
