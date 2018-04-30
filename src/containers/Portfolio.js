@@ -18,7 +18,7 @@ class Portfolio extends PureComponent{
     const {vWidth}=this.props
     return (
       <div className='Portfolio' style={{width:'95%', margin:'0 auto',
-      marginBottom:`${this.marginbottom()}`,marginTop:(vWidth<768)?'0':'70px'}}>
+      paddingBottom:`${this.marginbottom()}`,marginTop:(vWidth<768)?'0':'70px'}}>
         <Grid centered doubling columns={2} style={{width:'100%', margin:'0 auto'}}>
           <Grid.Column>
             <Segment style={{backgroundColor:'rgba(219,112,147,.2)', textAlign:'center'}}>
