@@ -21,10 +21,22 @@ class App extends Component {
   componentWillUnmount = () =>{
     window.removeEventListener("resize", this.updateDimensions);
   }
+
+  paddingbottom = ()=> {
+    const {vWidth}=this.props
+    if (vWidth<362){
+      return '89px'
+    }
+    if (vWidth>=362 && vWidth<526){
+      return '68px'
+    }
+    return '47px'
+  }
+
   render() {
     const { activeItem, vWidth } = this.state
     return (
-      <div className="App">
+      <div className="App" style={{paddingBottom:`${this.paddingbottom()}`, paddingTop:vWidth<768?'0':'57px'}}>
         <Menu stackable fixed={vWidth<768?null:'top'} style={{borderColor:'rgb(46,10,36)',backgroundColor:'#7D6987'}}>
           <Menu.Item style={{backgroundColor:'lightgrey'}}>
             <Image src='/favicon.png' size='mini'/>
