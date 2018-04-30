@@ -35,7 +35,6 @@ class Portfolio extends PureComponent{
               <Desktop vWidth={vWidth}/>
             </Segment>
           </Grid.Column>
-
         </Grid>
       </div>
     )
