@@ -3,7 +3,8 @@
   padding: 0;
   height: 100vh;
   font-family: sans-serif;
-  background-image: linear-gradient(to bottom right,#CEA5E1, rgb(48,10,36), #2b1335);
-  background-size: 100%;
-  background-attachment: fixed;
+  background:
+    linear-gradient(to right, rgba(48,10,36,.9) 0%,rgba(43,19,53,.9) 17%,#7E5284 50%, rgba(48,10,36,.9) 83%);
+  background-size: 100%
+  /* rgba(206,165,225) */
 }
