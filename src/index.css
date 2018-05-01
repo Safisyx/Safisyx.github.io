@@ -1,8 +1,7 @@
 body {
-  margin: 0 !important;
-  padding: 0 !important;
-  min-height: 100vh;
   font-family: sans-serif;
+  background: linear-gradient(to bottom right,rgba(228,214,234), rgba(43,19,53,.9), rgba(46,10,36),rgba(206,165,225) 98%) !important;
+  background-size: cover;
 }
 
 /* #body{
@@ -16,7 +15,3 @@ body {
   background-color: rgba(43,19,53,.9);
   rgba(206,165,225)
 } */
-
-#root{
-  background-color: rgba(228,214,234,.9);
-}

@@ -12,7 +12,7 @@ class Web extends PureComponent{
       nColumns=1
     }
     return (
-        <Grid columns={nColumns} className='Web' style={{backgroundColor:'rgba(34,36,38,0)', marginTop:'36px'}}>
+        <Grid columns={nColumns} className='Web' style={{marginTop:'36px'}}>
           <Grid.Column>
             <Card centered raised color='violet' style={{textAlign:'left'}}>
               <Image src= '/hangman.png'/>
