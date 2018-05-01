@@ -1,8 +1,6 @@
-body {
-  margin: 0 !important;
-  padding: 0 !important;
-  min-height: 100vh;
+#body {
   font-family: sans-serif;
+  background-color: rgba(228,214,234,.9);
 }
 
 /* #body{
@@ -18,5 +16,5 @@ body {
 } */
 
 #root{
-  background-color: rgba(228,214,234,.9);
+  background-color: transparent;
 }

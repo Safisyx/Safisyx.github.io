@@ -12,7 +12,7 @@ class Desktop extends PureComponent{
       nColumns=1
     }
     return (
-        <Grid centered columns={nColumns} className='Web' style={{backgroundColor:'rgba(34,36,38,.1)',marginTop:'36px'}}>
+        <Grid centered columns={nColumns} className='Web' style={{marginTop:'36px'}}>
           <Grid.Column>
             <Card centered raised color='violet'>
               <Image src= '/tank.gif'/>
