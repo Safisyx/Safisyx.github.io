@@ -9,7 +9,7 @@ class Portfolio extends PureComponent{
     return (
         <Grid centered doubling columns={2} style={{width:'99%', margin:'0 auto', paddingTop:'5px'}}>
           <Grid.Column>
-            <Segment style={{backgroundColor:'rgba(219,112,147,.2)', textAlign:'center'}}>
+            <Segment style={{backgroundColor:'rgba(167,74,138,.3)', textAlign:'center'}}>
               <h2>Web:</h2>
               <Web vWidth={vWidth}/>
               <p style={{display:'inline-block', marginTop:'14px', color: 'white',
@@ -18,7 +18,7 @@ class Portfolio extends PureComponent{
             </Segment>
           </Grid.Column>
           <Grid.Column>
-            <Segment style={{backgroundColor:'rgba(219,112,147,.2)'}}>
+            <Segment style={{backgroundColor:'rgba(167,74,138,.3)'}}>
               <h2>Desktop:</h2>
               <Desktop vWidth={vWidth}/>
             </Segment>

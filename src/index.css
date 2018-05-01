@@ -1,5 +1,6 @@
-body {
+#body {
   font-family: sans-serif;
+  background-color: rgba(228,214,234,.9);
 }
 
 /* #body{
@@ -13,3 +14,7 @@ body {
   background-color: rgba(43,19,53,.9);
   rgba(206,165,225)
 } */
+
+#root{
+  background-color: transparent;
+}
