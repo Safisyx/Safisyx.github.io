@@ -55,24 +55,45 @@ class Web extends PureComponent{
               </Card>
             </Grid.Column>
 
-          <Grid.Column>
-            <Card centered raised color='violet' style={{textAlign:'left', height:'100%'}}>
-              <Image src= '/evaluation.png'/>
-              <Card.Content>
-                <Card.Header>
-                  Student Evaluation Tool
-                </Card.Header>
-                <Card.Description>
-                  Final individual project at <a className='b' target="_blank" rel="noopener noreferrer" href='https://www.codaisseur.com'>Codaisseur</a>.
-                  <br/>I used React/Redux in the frontend and TypeScript/TypeORM in the backend.
-                </Card.Description>
-              </Card.Content>
-              <Card.Content textAlign='center'>
-                <p><a className='a' target="_blank" rel="noopener noreferrer" href='https://github.com/Safisyx/evaluation-client'>View frontend code</a>
-                <br/><a className='a' target="_blank" rel="noopener noreferrer" href='https://github.com/Safisyx/student-evaluation-api'>View backend code</a></p>
-              </Card.Content>
-            </Card>
-          </Grid.Column>
+            <Grid.Column>
+              <Card centered raised color='violet' style={{textAlign:'left', height:'100%'}}>
+                <Image src= '/evaluation.png'/>
+                <Card.Content>
+                  <Card.Header>
+                    Student Evaluation Tool
+                  </Card.Header>
+                  <Card.Description>
+                    Final individual project at <a className='b' target="_blank" rel="noopener noreferrer" href='https://www.codaisseur.com'>Codaisseur</a>.
+                    <br/>I used React/Redux in the frontend and TypeScript/TypeORM in the backend.
+                  </Card.Description>
+                </Card.Content>
+                <Card.Content textAlign='center'>
+                  <p><a className='a' target="_blank" rel="noopener noreferrer" href='https://github.com/Safisyx/evaluation-client'>View frontend code</a>
+                  <br/><a className='a' target="_blank" rel="noopener noreferrer" href='https://github.com/Safisyx/student-evaluation-api'>View backend code</a></p>
+                </Card.Content>
+              </Card>
+            </Grid.Column>
+
+            <Grid.Column>
+              <Card centered raised color='violet' style={{textAlign:'left', height:'100%'}}>
+                <Image src= '/flexicon.gif'/>
+                <Card.Content>
+                  <Card.Header>
+                    Flexicon Project
+                  </Card.Header>
+                  <Card.Description>
+                    Real world group (5 people) project at <a className='b' target="_blank" rel="noopener noreferrer" href='https://www.codaisseur.com'>Codaisseur</a>.
+                    <br/>
+                    The aim of the project was to create a website for Flexicon to keep track of customers and orders.
+                    <br/>We used React/Redux in the frontend and TypeScript/TypeORM in the backend.
+                  </Card.Description>
+                </Card.Content>
+                <Card.Content textAlign='center'>
+                  <p><a className='a' target="_blank" rel="noopener noreferrer" href='https://github.com/Safisyx/frontend_RLP'>View frontend code</a>
+                  <br/><a className='a' target="_blank" rel="noopener noreferrer" href='https://github.com/Safisyx/backend_RLP'>View backend code</a></p>
+                </Card.Content>
+              </Card>
+            </Grid.Column>
      {
         /*  <Grid.Column>
             <Card centered raised color='black'>
