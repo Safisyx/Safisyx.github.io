@@ -14,18 +14,19 @@ class Web extends PureComponent{
     return (
         <Grid columns={nColumns} className='Web' style={{marginTop:'36px'}}>
           <Grid.Column>
-            <Card centered raised color='violet' style={{textAlign:'left'}}>
+            <Card centered raised color='violet' style={{textAlign:'left', height:'100%'}}>
               <Image src= '/hangman.png'/>
-              <Card.Content>
+              <Card.Content style={{height:'100%'}}>
                 <Card.Header>
-                  Hangman (React/Redux)
+                  Hangman
                 </Card.Header>
                 <Card.Meta>
                   <a className='a' target="_blank" rel="noopener noreferrer" href='https://safisyx-hangman.herokuapp.com/'>Deployed</a><span> on </span>
                   <a className='b' target="_blank" rel="noopener noreferrer" href='https://www.heroku.com/'>Heroku</a>
                 </Card.Meta>
                 <Card.Description>
-                  Individual assignment at <a className='b' target="_blank" rel="noopener noreferrer" href='https://www.codaisseur.com'>Codaisseur</a>
+                  Individual assignment at <a className='b' target="_blank" rel="noopener noreferrer" href='https://www.codaisseur.com'>Codaisseur</a>. <br/>
+                  A frontend app using React/Redux.
                 </Card.Description>
               </Card.Content>
               <Card.Content textAlign='center'>
@@ -35,7 +36,27 @@ class Web extends PureComponent{
           </Grid.Column>
 
           <Grid.Column>
-            <Card centered raised color='violet' style={{textAlign:'left'}}>
+              <Card centered raised color='violet' style={{textAlign:'left'}}>
+                <Image src= '/dinder.png'/>
+                <Card.Content>
+                  <Card.Header>
+                    Dinder
+                  </Card.Header>
+                  <Card.Description>
+                    Group (4 people) assignment at <a className='b' target="_blank" rel="noopener noreferrer" href='https://www.codaisseur.com'>Codaisseur</a>. <br/>
+                    The idea was to create an app like Tinder for dog lovers, using <a className='b' target="_blank" rel="noopener noreferrer" href='https://dog.ceo/dog-api/'>Dog API</a>. <br/>
+                    We used React/Redux in the frontend and Express/Sequelize in the backend.
+                  </Card.Description>
+                </Card.Content>
+                <Card.Content textAlign='center'>
+                   <p><a className='a' target="_blank" rel="noopener noreferrer" href='https://github.com/Safisyx/dinder-client'>View frontend code</a>
+                   <br/><a className='a' target="_blank" rel="noopener noreferrer" href='https://github.com/Safisyx/dinder-server'>View backend code</a></p>
+                </Card.Content>
+              </Card>
+            </Grid.Column>
+
+          <Grid.Column>
+            <Card centered raised color='violet' style={{textAlign:'left', height:'100%'}}>
               <Image src= '/evaluation.png'/>
               <Card.Content>
                 <Card.Header>
