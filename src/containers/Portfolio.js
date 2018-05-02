@@ -13,7 +13,7 @@ class Portfolio extends PureComponent{
               <h2>Web:</h2>
               <Web vWidth={vWidth}/>
               <p style={{display:'inline-block', marginTop:'14px', color: 'white',
-                 fontSize:'1.5em'}}><Icon name='github'/>More code examples on
+                 fontSize:'1.5em'}}><Icon name='github'/>More projects can be found on
                  <a target="_blank" rel="noopener noreferrer" href='https://github.com/Safisyx?tab=repositories'> Github</a></p>
             </Segment>
           </Grid.Column>
