@@ -35,6 +35,10 @@ class App extends Component {
 
   render() {
     const { activeItem, vWidth } = this.state
+    if (activeItem==='about') {
+      window.location = 'https://www.linkedin.com/in/h-safidy-n-ratsimbazafy-9a074195/'
+      return <p> Redirecting to LinkedIn...</p>
+    }
     return (
       <div className="App" style={{paddingBottom:`${this.paddingbottom()}`, paddingTop:vWidth<768?'0':'57px'}}>
         <Menu stackable fixed={vWidth<768?null:'top'} style={{borderColor:'rgb(46,10,36)',backgroundColor:'#7D6987'}}>
@@ -42,7 +46,7 @@ class App extends Component {
             <Image src='/favicon.png' size='mini'/>
             {
                this.state.vWidth<768 &&
-              <span className='myName'>Haingotiana Safidy Nandrianina Ratsimbazafy</span>
+               <span className='myName'><Icon name='mail'/>safisyx@gmail.com</span>
             }
           </Menu.Item>
           <Menu.Item
@@ -64,6 +68,12 @@ class App extends Component {
           >
             <span>PORTFOLIO</span>
           </Menu.Item>
+          {
+            vWidth>=768 &&
+            <Menu.Item position='right'>
+              <p><Icon name='mail'/>safisyx@gmail.com</p>
+            </Menu.Item>
+          }
         </Menu >
 
         {activeItem==='portfolio' &&
