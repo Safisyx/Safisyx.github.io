@@ -17,8 +17,8 @@ class Portfolio extends PureComponent{
                  <a target="_blank" rel="noopener noreferrer" href='https://github.com/Safisyx?tab=repositories'> Github</a></p>
             </Segment>
           </Grid.Column>
-          <Grid.Column>
-            <Segment style={{backgroundColor:'rgba(167,74,138,.3)'}}>
+          <Grid.Column style={{minHeight:'100%'}}>
+            <Segment style={{backgroundColor:'rgba(167,74,138,.3)',height:'100%'}}>
               <h2>Desktop:</h2>
               <Desktop vWidth={vWidth}/>
             </Segment>

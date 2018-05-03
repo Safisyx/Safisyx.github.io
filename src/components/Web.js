@@ -12,7 +12,7 @@ class Web extends PureComponent{
       nColumns=1
     }
     return (
-        <Grid columns={nColumns} className='Web' style={{marginTop:'36px'}}>
+        <Grid columns={nColumns} centered className='Web' style={{marginTop:'36px'}}>
           <Grid.Column>
             <Card centered raised color='violet' style={{textAlign:'left', height:'100%'}}>
               <Image src= '/hangman.png'/>
@@ -31,6 +31,24 @@ class Web extends PureComponent{
               </Card.Content>
               <Card.Content textAlign='center'>
                 <p><a className='a' target="_blank" rel="noopener noreferrer" href='https://github.com/Safisyx/Hangman'>View code</a></p>
+              </Card.Content>
+            </Card>
+          </Grid.Column>
+
+          <Grid.Column>
+            <Card centered raised color='violet' style={{textAlign:'left', height:'100%'}}>
+              <Image src= '/Ohh1.png'/>
+              <Card.Content style={{height:'100%'}}>
+                <Card.Header>
+                  Ohh1
+                </Card.Header>
+                <Card.Description>
+                  Individual exercise at <a className='b' target="_blank" rel="noopener noreferrer" href='https://www.codaisseur.com'>Codaisseur</a>. <br/>
+                  A frontend app using React/Redux.
+                </Card.Description>
+              </Card.Content>
+              <Card.Content textAlign='center'>
+                <p><a className='a' target="_blank" rel="noopener noreferrer" href='https://github.com/Safisyx/Ohh1'>View code</a></p>
               </Card.Content>
             </Card>
           </Grid.Column>
@@ -58,12 +76,13 @@ class Web extends PureComponent{
             <Grid.Column>
               <Card centered raised color='violet' style={{textAlign:'left', height:'100%'}}>
                 <Image src= '/evaluation.png'/>
-                <Card.Content>
+                <Card.Content style={{height:'100%'}}>
                   <Card.Header>
                     Student Evaluation Tool
                   </Card.Header>
                   <Card.Description>
                     Final individual project at <a className='b' target="_blank" rel="noopener noreferrer" href='https://www.codaisseur.com'>Codaisseur</a>.
+                    <br/>A tool for teachers to evaluate the students daily.
                     <br/>I used React/Redux in the frontend and TypeScript/TypeORM in the backend.
                   </Card.Description>
                 </Card.Content>
@@ -77,7 +96,7 @@ class Web extends PureComponent{
             <Grid.Column>
               <Card centered raised color='violet' style={{textAlign:'left', height:'100%'}}>
                 <Image src= '/flexicon.gif'/>
-                <Card.Content>
+                <Card.Content style={{height:'100%'}}>
                   <Card.Header>
                     Flexicon Project
                   </Card.Header>
