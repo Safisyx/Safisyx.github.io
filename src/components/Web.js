@@ -83,7 +83,7 @@ class Web extends PureComponent{
                   <Card.Description>
                     Final individual project at <a className='b' target="_blank" rel="noopener noreferrer" href='https://www.codaisseur.com'>Codaisseur</a>.
                     <br/>A tool for teachers to evaluate the students daily.
-                    <br/>I used React/Redux in the frontend and TypeScript/TypeORM in the backend.
+                    <br/>I used React/Redux in the frontend and Koa/TypeScript/TypeORM in the backend.
                   </Card.Description>
                 </Card.Content>
                 <Card.Content textAlign='center'>
@@ -104,7 +104,7 @@ class Web extends PureComponent{
                     Real world group (5 people) project at <a className='b' target="_blank" rel="noopener noreferrer" href='https://www.codaisseur.com'>Codaisseur</a>.
                     <br/>
                     The aim of the project was to create a website for Flexicon to keep track of customers and orders.
-                    <br/>We used React/Redux in the frontend and TypeScript/TypeORM in the backend.
+                    <br/>We used React/Redux in the frontend and Koa/TypeScript/TypeORM in the backend.
                   </Card.Description>
                 </Card.Content>
                 <Card.Content textAlign='center'>
