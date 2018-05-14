@@ -108,8 +108,8 @@ class Web extends PureComponent{
                   </Card.Description>
                 </Card.Content>
                 <Card.Content textAlign='center'>
-                  <p><a className='a' target="_blank" rel="noopener noreferrer" href='https://github.com/Safisyx/frontend_RLP'>View frontend code</a>
-                  <br/><a className='a' target="_blank" rel="noopener noreferrer" href='https://github.com/Safisyx/backend_RLP'>View backend code</a></p>
+                  <p><a className='a' target="_blank" rel="noopener noreferrer" href='https://github.com/Safisyx/frontend-RLP'>View frontend code</a>
+                  <br/><a className='a' target="_blank" rel="noopener noreferrer" href='https://github.com/Safisyx/backend-RLP'>View backend code</a></p>
                 </Card.Content>
               </Card>
             </Grid.Column>
